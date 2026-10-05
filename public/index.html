@@ -89,6 +89,7 @@ const $=s=>document.querySelector(s), app=$('#app');
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 function toggleMark(id){marked.has(id)?marked.delete(id):marked.add(id);save(KEY,[...marked])}
+const otazok=n=>n+' '+(n===1?'otázka':n>=2&&n<=4?'otázky':'otázok');
 function setTitle(t,back){$('#title').textContent=t;$('#back').hidden=!back}
 
 function qCard(q){
@@ -105,10 +106,10 @@ function home(){
   setTitle('Autoškola A2',false);
   const m=DATA.qs.filter(q=>marked.has(q.id)).length;
   app.innerHTML=`<div class="list">
-    <button class="cat marked" data-go="#/marked"><span class="num">★</span><span class="t"><b>Označené na učenie</b><small>${m} otázok</small></span></button>
+    <button class="cat marked" data-go="#/marked"><span class="num">★</span><span class="t"><b>Označené na učenie</b><small>${otazok(m)}</small></span></button>
     <div class="section">Kategórie</div>
     ${DATA.cats.map((c,i)=>{const qs=DATA.qs.filter(q=>q.cat===i+1),mk=qs.filter(q=>marked.has(q.id)).length;
-      return `<button class="cat" data-go="#/cat/${i+1}"><span class="num">${i+1}</span><span class="t"><b>${esc(c)}</b><small>${qs.length} otázok</small></span>${mk?`<span class="badge">★ ${mk}</span>`:''}</button>`}).join('')}
+      return `<button class="cat" data-go="#/cat/${i+1}"><span class="num">${i+1}</span><span class="t"><b>${esc(c)}</b><small>${otazok(qs.length)}</small></span>${mk?`<span class="badge">★ ${mk}</span>`:''}</button>`}).join('')}
   </div>`;
 }
 
@@ -140,7 +141,7 @@ function listView(title,qs,{grouped=false,key}={}){
 function flash(title,list){
   let deck=[...list].sort(()=>Math.random()-.5), i=0, shown=false;
   const draw=()=>{
-    if(i>=deck.length){app.innerHTML=`<div class="card"><div class="empty"><b>Hotovo ✓</b><br>Prešiel si ${deck.length} otázok.</div>
+    if(i>=deck.length){app.innerHTML=`<div class="card"><div class="empty"><b>Hotovo ✓</b><br>Prešiel si ${otazok(deck.length)}.</div>
       <div class="actions"><button class="primary" id="again">Znova</button><button id="done">Späť</button></div></div>`;
       $('#again').onclick=()=>flash(title,list); $('#done').onclick=()=>route(); return;}
     const q=deck[i], on=marked.has(q.id);
