@@ -51,9 +51,9 @@ main{max-width:760px;margin:0 auto;padding:12px 16px calc(env(safe-area-inset-bo
 .star{font-size:24px;line-height:1;color:var(--line);padding:2px 4px;margin:-4px -6px 0 0}
 .star.on{color:var(--star)}
 .ans{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--ok-soft);color:var(--text)}
-.ans::before{content:"✓ ";color:var(--ok);font-weight:700}
+.ans .ok{color:var(--ok);font-weight:700;margin-left:4px}
 .ans.hidden{background:var(--line);color:transparent;user-select:none;cursor:pointer;position:relative}
-.ans.hidden::before{color:transparent}
+.ans.hidden .ok{color:transparent}
 .ans.hidden::after{content:"Ťukni pre odpoveď";position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:14px}
 .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 5px;vertical-align:2px}
 .empty{text-align:center;color:var(--muted);padding:40px 10px}
@@ -99,7 +99,7 @@ function qCard(q){
     <div class="head"><span class="n">${q.n}.</span><div class="text">${esc(q.q)}${q.g?` <span class="tag">${esc(q.g)}</span>`:''}</div>
     <button class="star ${on?'on':''}" data-star="${q.id}" aria-label="Označiť">${on?'★':'☆'}</button></div>
     ${q.qi?`<img loading="lazy" src="img/${q.qi}" alt="">`:''}
-    <div class="ans ${prefs.hide?'hidden':''}">${esc(q.a)}${q.ai?`<img loading="lazy" src="img/${q.ai}" alt="">`:''}</div>
+    <div class="ans ${prefs.hide?'hidden':''}">${esc(q.a)}<span class="ok">✓</span>${q.ai?`<img loading="lazy" src="img/${q.ai}" alt="">`:''}</div>
   </div>`;
 }
 
@@ -150,7 +150,7 @@ function flash(title,list){
     <div class="card"><div class="meta"><span>${i+1} / ${deck.length} · kat. ${q.cat}, č. ${q.n}</span>
       <button class="star ${on?'on':''}" data-star="${q.id}">${on?'★':'☆'}</button></div>
       <div class="text">${esc(q.q)}</div>${q.qi?`<img src="img/${q.qi}" alt="">`:''}
-      <div class="ans ${shown?'':'hidden'}" id="a">${esc(q.a)}${q.ai?`<img src="img/${q.ai}" alt="">`:''}</div></div>
+      <div class="ans ${shown?'':'hidden'}" id="a">${esc(q.a)}<span class="ok">✓</span>${q.ai?`<img src="img/${q.ai}" alt="">`:''}</div></div>
     <div class="actions">${shown
       ?`<button id="again">Ešte nie</button><button class="good" id="know">Viem ${on?'(odznačiť)':''}</button>`
       :`<button class="primary" id="show">Ukáž odpoveď</button>`}</div>`;
