@@ -13,71 +13,97 @@
 <title>Autoškola A2</title>
 <style>
 :root{
-  --bg:#f4f5f7;--card:#fff;--text:#14171c;--muted:#6b7280;--line:#e5e7eb;
-  --accent:#1d4ed8;--accent-soft:#e0e7ff;--star:#f59e0b;--ok:#15803d;--ok-soft:#dcfce7;
+  --bg:#eef1f5;--card:#fff;--card2:#f5f7fa;--text:#0f172a;--muted:#475569;--faint:#8b97a8;--line:#dde3eb;
+  --accent:#2563eb;--accent-btn:#2563eb;--accent-soft:#e3ebff;--star:#f59e0b;
+  --ok:#16a34a;--ok-btn:#15803d;--ok-soft:#e9f9ef;--ok-line:#a7e8bf;
+  --warn-soft:#fff3e0;--warn-ink:#9a3412;--warn-line:#fed7aa;
+  --shadow:0 1px 2px rgba(15,23,42,.05),0 6px 18px rgba(15,23,42,.06);
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#0f1115;--card:#181b21;--text:#e8eaee;--muted:#9aa1ad;--line:#2a2e36;
-  --accent:#6b8cff;--accent-soft:#1e2742;--star:#fbbf24;--ok:#4ade80;--ok-soft:#14321f;
+  --bg:#0b0e14;--card:#161b24;--card2:#1d2330;--text:#f4f6fa;--muted:#b3bccb;--faint:#748096;--line:#2a3243;
+  --accent:#7ea2ff;--accent-btn:#2f62f0;--accent-soft:#1b2644;--star:#fbbf24;
+  --ok:#3ddc7a;--ok-btn:#16a34a;--ok-soft:#10291b;--ok-line:#1f6b3d;
+  --warn-soft:#2b1f10;--warn-ink:#fdd29b;--warn-line:#5c3d17;
+  --shadow:none;
 }}
 [hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto}
-.bar h1{font-size:18px;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);padding:calc(env(safe-area-inset-top) + 8px) 12px 8px;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:6px;max-width:760px;margin:0 auto}
+.bar h1{font-size:17px;font-weight:700;margin:0 4px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.01em}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-.icon-btn{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-size:22px}
+.icon-btn{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:24px;color:var(--accent)}
 .icon-btn:active{background:var(--line)}
-main{max-width:760px;margin:0 auto;padding:12px 16px calc(env(safe-area-inset-bottom) + 90px)}
-.list{display:flex;flex-direction:column;gap:8px}
-.cat{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:14px;padding:14px;text-align:left;width:100%}
-.cat .num{width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;flex:none}
+main{max-width:760px;margin:0 auto;padding:14px 16px calc(env(safe-area-inset-bottom) + 110px)}
+.list{display:flex;flex-direction:column;gap:10px}
+.cat{display:flex;align-items:center;gap:14px;background:var(--card);border-radius:16px;padding:14px 16px;text-align:left;width:100%;box-shadow:var(--shadow);transition:transform .1s}
+.cat:active{transform:scale(.985)}
+.cat .num{width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:800;flex:none}
 .cat .t{flex:1;min-width:0}
-.cat .t b{display:block;font-weight:600}
-.cat .t small{color:var(--muted)}
-.cat .badge{color:var(--star);font-weight:600;font-size:14px;white-space:nowrap}
+.cat .t b{display:block;font-weight:650;line-height:1.3}
+.cat .t small{color:var(--muted);font-size:14px}
+.cat .badge{color:var(--star);font-weight:700;font-size:14px;white-space:nowrap}
 .cat.marked .num{background:var(--star);color:#fff}
-.tools{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.search{flex:1 1 100%;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit}
-.seg{display:flex;background:var(--line);border-radius:10px;padding:3px;flex:1}
-.seg button{flex:1;padding:7px 6px;border-radius:8px;font-size:13px;color:var(--muted);white-space:nowrap}
-.seg button.on{background:var(--card);color:var(--text);font-weight:600}
-.q{background:var(--card);border-radius:14px;padding:14px;position:relative}
+.tools{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.search{flex:1 1 100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;outline:none}
+.search:focus{border-color:var(--accent)}
+.search::placeholder{color:var(--faint)}
+.seg{display:flex;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:3px;flex:1}
+.seg button{flex:1;padding:8px 6px;border-radius:9px;font-size:14px;color:var(--muted);white-space:nowrap;font-weight:500}
+.seg button.on{background:var(--card);color:var(--text);font-weight:650;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.q{background:var(--card);border-radius:16px;padding:16px;position:relative;box-shadow:var(--shadow)}
 .q .head{display:flex;gap:10px;align-items:flex-start}
-.q .n{color:var(--muted);font-size:13px;font-weight:600;min-width:30px;padding-top:2px}
-.q .text{flex:1;font-weight:600}
-.q img{display:block;max-width:100%;max-height:260px;margin:10px auto 0;border-radius:8px;background:#fff}
-.star{font-size:24px;line-height:1;color:var(--line);padding:2px 4px;margin:-4px -6px 0 0}
+.q .n{color:var(--faint);font-size:13px;font-weight:700;min-width:28px;padding-top:2px;font-variant-numeric:tabular-nums}
+.q .text{flex:1;font-weight:650;line-height:1.4}
+.q img{display:block;max-width:100%;max-height:260px;margin:12px auto 0;border-radius:10px;background:#fff}
+.star{font-size:24px;line-height:1;color:var(--faint);padding:2px 4px;margin:-4px -6px 0 0}
 .star.on{color:var(--star)}
-.ans{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--ok-soft);color:var(--text)}
-.ans .ok{color:var(--ok);font-weight:700;margin-left:4px}
-.ans.hidden{background:var(--line);color:transparent;user-select:none;cursor:pointer;position:relative}
+.ans{margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--ok-soft);border:1px solid var(--ok-line);color:var(--text);line-height:1.45}
+.ans .ok{color:var(--ok);font-weight:800;margin-left:5px}
+.ans.hidden{background:transparent;border:1.5px dashed var(--line);color:transparent;user-select:none;cursor:pointer;position:relative}
 .ans.hidden .ok{color:transparent}
-.ans.hidden::after{content:"Ťukni pre odpoveď";position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:14px}
-.tag{display:inline-block;font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 5px;vertical-align:2px}
+.ans.hidden::after{content:"Ťukni pre odpoveď";position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:14px;font-weight:500}
+.tag{display:inline-block;font-size:11px;font-weight:700;color:var(--muted);background:var(--card2);border:1px solid var(--line);border-radius:6px;padding:0 6px;vertical-align:2px}
 .empty{text-align:center;color:var(--muted);padding:40px 10px}
-.fab{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 16px);background:var(--accent);color:#fff;border-radius:999px;padding:13px 22px;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.25);white-space:nowrap}
-.section{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:18px 4px 8px}
-/* flashcards */
-.card{background:var(--card);border-radius:18px;padding:18px;min-height:50vh;display:flex;flex-direction:column}
-.card .meta{color:var(--muted);font-size:13px;display:flex;justify-content:space-between;margin-bottom:10px}
-.card .text{font-size:19px;font-weight:600}
-.card img{display:block;align-self:center;max-width:100%;max-height:38vh;margin:10px auto 0;border-radius:8px;background:#fff;object-fit:contain}
-.card .ans{font-size:17px}
-.actions{display:flex;gap:10px;margin-top:14px}
-.actions button{flex:1;padding:14px;border-radius:14px;font-weight:600;background:var(--card)}
-.actions .primary{background:var(--accent);color:#fff}
-.actions .good{background:var(--ok);color:#fff}
-.progress{height:4px;background:var(--line);border-radius:4px;margin-bottom:12px;overflow:hidden}
-.progress i{display:block;height:100%;background:var(--accent)}
+.fab{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 16px);background:var(--accent-btn);color:#fff;border-radius:999px;padding:14px 24px;font-weight:700;box-shadow:0 8px 24px rgba(37,99,235,.35);white-space:nowrap}
+.section{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:20px 4px 4px}
+/* precvičovanie */
+.fhead{display:flex;align-items:center;gap:12px;margin:2px 2px 14px}
+.progress{flex:1;height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--ok);border-radius:8px;transition:width .3s}
+.count{font-size:14px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.fhead .star{margin:0}
+.card{background:var(--card);border-radius:22px;padding:22px 20px;box-shadow:var(--shadow)}
+body.flash main{height:calc(100dvh - var(--hh,57px));display:flex;flex-direction:column;padding-bottom:calc(env(safe-area-inset-bottom) + 96px)}
+body.flash .card{flex:1;min-height:0;display:flex;flex-direction:column;overflow-y:auto}
+.card .slot{margin-top:auto;padding-top:18px}
+.card.long .text{font-size:18px}
+.card.xlong .text{font-size:16.5px;line-height:1.4}
+.card .text{font-size:21px;font-weight:700;line-height:1.35;letter-spacing:-.01em}
+.card img{display:block;max-width:100%;max-height:min(32vh,260px);margin:16px auto 0;border-radius:12px;background:#fff;object-fit:contain}
+.card .ans{font-size:18px;margin:0;padding:16px 18px;border-radius:16px;min-height:132px}
+.reveal{display:flex;width:100%;min-height:132px;border:2px dashed var(--line);border-radius:16px;color:var(--muted);font-size:15px;font-weight:600;align-items:center;justify-content:center;gap:8px}
+.reveal:active{background:var(--card2)}
+.actions{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(env(safe-area-inset-bottom) + 14px);background:linear-gradient(transparent,var(--bg) 30%);display:flex;justify-content:center}
+.actions>div{display:flex;gap:10px;width:100%;max-width:728px}
+.actions button{flex:1;height:58px;border-radius:16px;font-size:17px;font-weight:700;transition:transform .1s}
+.actions button:active{transform:scale(.97)}
+.actions .primary{background:var(--accent-btn);color:#fff}
+.actions .good{background:var(--ok-btn);color:#fff}
+.actions .again{background:var(--warn-soft);color:var(--warn-ink);border:1px solid var(--warn-line)}
+.actions .plain{background:var(--card);color:var(--text);border:1px solid var(--line)}
+.done{text-align:center;padding:36px 10px 20px}
+.done .big{font-size:56px;line-height:1;color:var(--ok)}
+.done h2{margin:12px 0 4px;font-size:24px}
+.done p{margin:0;color:var(--muted)}
 </style>
 </head>
 <body>
 <header><div class="bar">
-  <button class="icon-btn" id="back" hidden aria-label="Späť">‹</button>
+  <button class="icon-btn" id="back" hidden aria-label="Späť"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
   <h1 id="title">Autoškola A2</h1>
-  <button class="icon-btn" id="menu" aria-label="Kategórie" title="Kategórie">☰</button>
+  <button class="icon-btn" id="menu" aria-label="Kategórie" title="Kategórie"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></header>
 <main id="app"></main>
 <script src="questions.js"></script>
@@ -91,6 +117,8 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 function toggleMark(id){marked.has(id)?marked.delete(id):marked.add(id);save(KEY,[...marked])}
 const otazok=n=>n+' '+(n===1?'otázka':n>=2&&n<=4?'otázky':'otázok');
+const setHH=()=>document.documentElement.style.setProperty('--hh',$('header').offsetHeight+'px');
+addEventListener('resize',setHH);
 function setTitle(t,back){$('#title').textContent=t;$('#back').hidden=!back}
 
 function qCard(q){
@@ -142,28 +170,30 @@ function listView(title,qs,{grouped=false,key}={}){
 function flash(title,list){
   let deck=[...list].sort(()=>Math.random()-.5), i=0, shown=false;
   const draw=()=>{
-    if(i>=deck.length){app.innerHTML=`<div class="card"><div class="empty"><b>Hotovo ✓</b><br>Prešiel si ${otazok(deck.length)}.</div>
-      <div class="actions"><button class="primary" id="again">Znova</button><button id="done">Späť</button></div></div>`;
+    if(i>=deck.length){app.innerHTML=`<div class="card done"><div class="big">✓</div><h2>Hotovo</h2><p>Prešiel si ${otazok(deck.length)}.</p></div>
+      <div class="actions"><div><button class="plain" id="done">Späť</button><button class="primary" id="again">Znova</button></div></div>`;
       $('#again').onclick=()=>flash(title,list); $('#done').onclick=()=>route(); return;}
     const q=deck[i], on=marked.has(q.id);
-    app.innerHTML=`<div class="progress"><i style="width:${i/deck.length*100}%"></i></div>
-    <div class="card"><div class="meta"><span>${i+1} / ${deck.length} · kat. ${q.cat}, č. ${q.n}</span>
-      <button class="star ${on?'on':''}" data-star="${q.id}">${on?'★':'☆'}</button></div>
-      <div class="text">${esc(q.q)}</div>${q.qi?`<img src="img/${q.qi}" alt="">`:''}
-      <div class="ans ${shown?'':'hidden'}" id="a">${esc(q.a)}<span class="ok">✓</span>${q.ai?`<img src="img/${q.ai}" alt="">`:''}</div></div>
-    <div class="actions">${shown
-      ?`<button id="again">Ešte nie</button><button class="good" id="know">Viem ${on?'(odznačiť)':''}</button>`
-      :`<button class="primary" id="show">Ukáž odpoveď</button>`}</div>`;
+    app.innerHTML=`<div class="fhead"><div class="progress"><i style="width:${i/deck.length*100}%"></i></div>
+      <span class="count">${i+1} / ${deck.length}</span>
+      <button class="star ${on?'on':''}" data-star="${q.id}" aria-label="Označiť">${on?'★':'☆'}</button></div>
+    <div class="card ${q.q.length>200?'xlong':q.q.length>110?'long':''}"><div class="text">${esc(q.q)}</div>${q.qi?`<img src="img/${q.qi}" alt="">`:''}
+      <div class="slot">${shown?`<div class="ans">${esc(q.a)}<span class="ok">✓</span>${q.ai?`<img src="img/${q.ai}" alt="">`:''}</div>`
+             :`<button class="reveal" id="a">Ťukni pre odpoveď</button>`}</div></div>
+    <div class="actions"><div>${shown
+      ?`<button class="again" id="again">Ešte nie</button><button class="good" id="know">Viem</button>`
+      :`<button class="primary" id="show">Ukáž odpoveď</button>`}</div></div>`;
+    const nx=deck[i+1]; if(nx&&nx.qi) new Image().src='img/'+nx.qi;
     const reveal=()=>{shown=true;draw()};
-    $('#show')&&($('#show').onclick=reveal); $('#a').onclick=()=>!shown&&reveal();
-    $('#know')&&($('#know').onclick=()=>{if(marked.has(q.id))toggleMark(q.id);i++;shown=false;draw()});
-    $('#again')&&($('#again').onclick=()=>{if(!marked.has(q.id))toggleMark(q.id);deck.push(q);i++;shown=false;draw()});
+    $('#show')&&($('#show').onclick=reveal); $('#a')&&($('#a').onclick=reveal);
+    $('#know')&&($('#know').onclick=()=>{if(marked.has(q.id))toggleMark(q.id);i++;shown=false;draw();scrollTo(0,0)});
+    $('#again')&&($('#again').onclick=()=>{if(!marked.has(q.id))toggleMark(q.id);deck.push(q);i++;shown=false;draw();scrollTo(0,0)});
   };
-  inFlash=true; setTitle('Precvičovanie',true); draw();
+  inFlash=true; document.body.classList.add('flash'); setHH(); setTitle('Precvičovanie',true); draw();
 }
 
 function route(){
-  inFlash=false; scrollTo(0,0); const h=location.hash;
+  inFlash=false; document.body.classList.remove('flash'); scrollTo(0,0); const h=location.hash;
   let m;
   if(h==='#/marked') listView('★ Označené',DATA.qs.filter(q=>marked.has(q.id)),{grouped:true,key:'marked'});
   else if(m=h.match(/^#\/cat\/(\d+)/)) listView(`${m[1]}. ${DATA.cats[m[1]-1]}`,DATA.qs.filter(q=>q.cat===+m[1]));

@@ -31,7 +31,12 @@ def image_in(p,rect,textrects):
     if not bb: return None
     w,h=bb[2]-bb[0],bb[3]-bb[1]
     if not ((w>=12 and h>=40) or (w>=40 and h>=25)): return None
-    return im.crop((max(0,bb[0]-4),max(0,bb[1]-4),min(im.width,bb[2]+4),min(im.height,bb[3]+4)))
+    out=im.crop((max(0,bb[0]-4),max(0,bb[1]-4),min(im.width,bb[2]+4),min(im.height,bb[3]+4)))
+    # podfarbenie riadku tabuľky (svetlomodré pruhy) -> biela, aby mali všetky obrázky rovnaký podklad
+    if bgc!=(255,255,255):
+        near=ImageChops.difference(out,Image.new('RGB',out.size,bgc)).convert('L').point(lambda v:255 if v<14 else 0)
+        out.paste((255,255,255),mask=near)
+    return out
 qs=[]; cat=0; nimg=0
 for pn,p in enumerate(d):
     xs=[[],[],[]]
