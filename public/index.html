@@ -117,7 +117,9 @@ body.flash .card{flex:1;min-height:0;display:flex;flex-direction:column;overflow
 .opt.bad b{background:var(--bad);color:#fff;border-color:transparent}
 .grid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
 .grid button{aspect-ratio:1;border-radius:10px;font-weight:700;font-size:14px;background:var(--card2);border:1.5px solid var(--line);color:var(--muted)}
-.grid button.answered{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.grid button.right{background:var(--ok-soft);color:var(--ok);border-color:var(--ok-line)}
+.grid button.wrong{background:var(--bad-soft);color:var(--bad);border-color:var(--bad-line)}
+.opt.dim{opacity:.55}
 .grid button.cur{border-color:var(--accent)}
 .score{text-align:center;padding:26px 16px 22px}
 .score .big{font-size:64px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
@@ -144,7 +146,7 @@ body.flash .card{flex:1;min-height:0;display:flex;flex-direction:column;overflow
   <button class="icon-btn" id="menu" aria-label="Kategórie" title="Kategórie"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></header>
 <main id="app"></main>
-<script src="questions.js?v=11"></script>
+<script src="questions.js?v=12"></script>
 <script>
 const KEY='a2-marked-v1', PREF='a2-prefs-v1';
 const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
@@ -243,6 +245,8 @@ let tick=null;
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 const qById=id=>DATA.qs.find(q=>q.id===id);
 const mmss=s=>{s=Math.max(0,Math.round(s));return (s/60|0)+':'+String(s%60).padStart(2,'0')};
+// po zodpovedaní: správna zelená, zle zvolená červená; odpoveď sa už nedá zmeniť
+const optCls=(q,a,i)=>a<0?'':i===q.c?'good':i===a?'bad':'dim';
 function newTest(){
   const ids=[];
   for(const [cat,[n]] of Object.entries(PLAN)) ids.push(...shuffle(DATA.qs.filter(q=>q.cat===+cat&&q.o)).slice(0,n).map(q=>q.id));
@@ -273,7 +277,7 @@ function testView(){
     const head=`<div class="fhead"><div class="progress"><i style="width:${answered/n*100}%"></i></div>
       <span class="count">${grid?answered+' / '+n+' zodp.':(k+1)+' / '+n}</span><span class="timer" id="timer">${mmss(left())}</span></div>`;
     if(grid){
-      app.innerHTML=head+`<div class="card"><div class="grid">${T.ids.map((_,i)=>`<button data-j="${i}" class="${T.ans[i]>=0?'answered':''} ${i===k?'cur':''}">${i+1}</button>`).join('')}</div></div>
+      app.innerHTML=head+`<div class="card"><div class="grid">${T.ids.map((_,i)=>`<button data-j="${i}" class="${T.ans[i]<0?'':T.ans[i]===qById(T.ids[i]).c?'right':'wrong'} ${i===k?'cur':''}">${i+1}</button>`).join('')}</div></div>
         <div class="actions"><div><button class="plain" id="back2">Späť na otázku</button><button class="good" id="end">Vyhodnotiť</button></div></div>`;
       app.querySelector('.grid').onclick=e=>{const j=e.target.dataset.j;if(j!==undefined){T.cur=+j;save(TKEY,T);grid=false;draw()}};
       $('#back2').onclick=()=>{grid=false;draw()};
@@ -284,13 +288,13 @@ function testView(){
     app.innerHTML=head+`<div class="card ${q.q.length>200?'xlong':q.q.length>110?'long':''}">
       <div><span class="pts">${b} ${b===1?'bod':b<5?'body':'bodov'}</span></div>
       <div class="text">${esc(q.q)}</div>${q.qi?`<img src="img/${q.qi}" alt="">`:''}
-      <div class="opts">${q.o.map((o,i)=>`<button class="opt ${T.ans[k]===i?'sel':''}" data-o="${i}"><b>${'ABC'[i]}</b><span>${esc(o)}</span></button>`).join('')}</div></div>
+      <div class="opts">${q.o.map((o,i)=>`<button class="opt ${optCls(q,T.ans[k],i)}" data-o="${i}"><b>${'ABC'[i]}</b><span>${esc(o)}</span></button>`).join('')}</div></div>
       <div class="actions"><div><button class="plain" id="prev" ${k?'':'disabled style="opacity:.4"'}>‹ Späť</button>
         <button class="plain" id="grid" style="flex:.7">Prehľad</button>
         ${k<n-1?`<button class="primary" id="next">Ďalej ›</button>`:`<button class="good" id="next">Vyhodnotiť</button>`}</div></div>`;
     const nx=T.ids[k+1]&&qById(T.ids[k+1]); if(nx&&nx.qi) new Image().src='img/'+nx.qi;
-    app.querySelector('.opts').onclick=e=>{const b=e.target.closest('[data-o]');if(!b)return;T.ans[k]=+b.dataset.o;save(TKEY,T);
-      app.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===b))};
+    app.querySelector('.opts').onclick=e=>{const b=e.target.closest('[data-o]');if(!b||T.ans[k]>=0)return;T.ans[k]=+b.dataset.o;save(TKEY,T);
+      app.querySelectorAll('.opt').forEach((x,i)=>x.className='opt '+optCls(q,T.ans[k],i))};
     $('#prev').onclick=()=>{if(k){T.cur--;save(TKEY,T);draw()}};
     $('#grid').onclick=()=>{grid=true;draw()};
     $('#next').onclick=()=>{if(k<n-1){T.cur++;save(TKEY,T);draw();$('.card').scrollTop=0}else{grid=true;draw()}};
