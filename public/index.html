@@ -17,6 +17,7 @@
   --accent:#2563eb;--accent-btn:#2563eb;--accent-soft:#e3ebff;--star:#f59e0b;
   --ok:#16a34a;--ok-btn:#15803d;--ok-soft:#e9f9ef;--ok-line:#a7e8bf;
   --warn-soft:#fff3e0;--warn-ink:#9a3412;--warn-line:#fed7aa;
+  --bad:#dc2626;--bad-soft:#fdecec;--bad-line:#f8b4b4;
   --shadow:0 1px 2px rgba(15,23,42,.05),0 6px 18px rgba(15,23,42,.06);
 }
 @media (prefers-color-scheme:dark){:root{
@@ -24,6 +25,7 @@
   --accent:#7ea2ff;--accent-btn:#2f62f0;--accent-soft:#1b2644;--star:#fbbf24;
   --ok:#3ddc7a;--ok-btn:#16a34a;--ok-soft:#10291b;--ok-line:#1f6b3d;
   --warn-soft:#2b1f10;--warn-ink:#fdd29b;--warn-line:#5c3d17;
+  --bad:#f87171;--bad-soft:#2c1414;--bad-line:#6b2222;
   --shadow:none;
 }}
 [hidden]{display:none!important}
@@ -94,6 +96,42 @@ body.flash .card{flex:1;min-height:0;display:flex;flex-direction:column;overflow
 .actions .again{background:var(--warn-soft);color:var(--warn-ink);border:1px solid var(--warn-line)}
 .actions .plain{background:var(--card);color:var(--text);border:1px solid var(--line)}
 .done{text-align:center;padding:36px 10px 20px}
+/* skúšobný test */
+.hero{display:block;width:100%;text-align:left;background:var(--accent-btn);color:#fff;border-radius:20px;padding:18px 18px 16px;box-shadow:0 10px 26px rgba(37,99,235,.28)}
+.hero:active{transform:scale(.985)}
+.hero b{display:block;font-size:20px;font-weight:800;letter-spacing:-.01em}
+.hero span{display:block;opacity:.88;font-size:14px;margin-top:2px}
+.hero .last{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
+.hero .last i{font-style:normal;font-size:13px;font-weight:700;background:rgba(255,255,255,.18);border-radius:8px;padding:2px 8px}
+.timer{font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px 9px}
+.timer.low{color:var(--bad);border-color:var(--bad-line)}
+.pts{display:inline-block;font-size:12px;font-weight:800;color:var(--accent);background:var(--accent-soft);border-radius:8px;padding:2px 8px;margin-bottom:10px}
+.opts{display:flex;flex-direction:column;gap:10px;padding-top:18px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;padding:13px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);font-size:16px;line-height:1.4}
+.opt b{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:14px;background:var(--card2);color:var(--muted);border:1px solid var(--line)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.sel b{background:var(--accent-btn);color:#fff;border-color:transparent}
+.opt.good{border-color:var(--ok-line);background:var(--ok-soft)}
+.opt.good b{background:var(--ok-btn);color:#fff;border-color:transparent}
+.opt.bad{border-color:var(--bad-line);background:var(--bad-soft)}
+.opt.bad b{background:var(--bad);color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+.grid button{aspect-ratio:1;border-radius:10px;font-weight:700;font-size:14px;background:var(--card2);border:1.5px solid var(--line);color:var(--muted)}
+.grid button.answered{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.grid button.cur{border-color:var(--accent)}
+.score{text-align:center;padding:26px 16px 22px}
+.score .big{font-size:64px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.score .of{color:var(--muted);font-weight:600;margin-top:2px}
+.badge-res{display:inline-block;margin-top:14px;font-weight:800;border-radius:999px;padding:6px 16px}
+.badge-res.ok{background:var(--ok-btn);color:#fff}
+.badge-res.no{background:var(--bad);color:#fff}
+.score small{display:block;color:var(--muted);margin-top:10px;font-size:14px}
+.okr{display:flex;align-items:center;gap:10px;background:var(--card);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow)}
+.okr .nm{flex:1;min-width:0;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.okr .vl{font-weight:800;font-variant-numeric:tabular-nums;font-size:15px}
+.okr .vl.full{color:var(--ok)}
+.okr .vl.lost{color:var(--bad)}
+.wide-btn{width:100%;padding:14px;border-radius:14px;font-weight:700;background:var(--card);border:1px solid var(--line);color:var(--text);margin-top:10px}
 .done .big{font-size:56px;line-height:1;color:var(--ok)}
 .done h2{margin:12px 0 4px;font-size:24px}
 .done p{margin:0;color:var(--muted)}
@@ -134,7 +172,12 @@ function qCard(q){
 function home(){
   setTitle('Autoškola A2',false);
   const m=DATA.qs.filter(q=>marked.has(q.id)).length;
+  const T=load(TKEY,null), hist=load(HKEY,[]);
   app.innerHTML=`<div class="list">
+    <button class="hero" data-go="#/test"><b>${T?'Pokračovať v teste':'Skúšobný test'}</b>
+      <span>${T?`Zodpovedané ${T.ans.filter(a=>a>=0).length} z ${T.ids.length}`:'40 otázok · 30 minút · úspech od 90 bodov'}</span>
+      ${hist.length?`<div class="last">${hist.slice(0,5).map(x=>`<i>${x.pts} b ${x.pass?'✓':'✗'}</i>`).join('')}</div>`:''}</button>
+    <div class="section">Učenie</div>
     <button class="cat marked" data-go="#/marked"><span class="num">★</span><span class="t"><b>Označené na učenie</b><small>${otazok(m)}</small></span></button>
     <div class="section">Kategórie</div>
     ${DATA.cats.map((c,i)=>{const qs=DATA.qs.filter(q=>q.cat===i+1),mk=qs.filter(q=>marked.has(q.id)).length;
@@ -192,10 +235,99 @@ function flash(title,list){
   inFlash=true; document.body.classList.add('flash'); setHH(); setTitle('Precvičovanie',true); draw();
 }
 
+// ---------- skúšobný test (vyhláška 9/2009 Z. z. v znení 29/2020, § 18) ----------
+// okruh: [počet otázok, body za otázku]
+const PLAN={1:[8,3],2:[2,3],3:[8,2],4:[4,4],5:[1,2],6:[3,2],7:[2,1],8:[2,1],9:[8,3],10:[2,1]};
+const TKEY='a2-test-v1', HKEY='a2-hist-v1', RKEY='a2-res-v1', LIMIT=30*60, PASS=90;
+let tick=null;
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const qById=id=>DATA.qs.find(q=>q.id===id);
+const mmss=s=>{s=Math.max(0,Math.round(s));return (s/60|0)+':'+String(s%60).padStart(2,'0')};
+function newTest(){
+  const ids=[];
+  for(const [cat,[n]] of Object.entries(PLAN)) ids.push(...shuffle(DATA.qs.filter(q=>q.cat===+cat&&q.o)).slice(0,n).map(q=>q.id));
+  return {ids,ans:Array(ids.length).fill(-1),start:Date.now(),cur:0};
+}
+function evaluate(T){
+  const per={}; let pts=0; const wrong=[];
+  T.ids.forEach((id,k)=>{const q=qById(id),[,b]=PLAN[q.cat];per[q.cat]=per[q.cat]||{got:0,max:0};per[q.cat].max+=b;
+    if(T.ans[k]===q.c){pts+=b;per[q.cat].got+=b} else wrong.push({id,ans:T.ans[k]})});
+  return {pts,pass:pts>=PASS,per,wrong,secs:Math.min(LIMIT,(Date.now()-T.start)/1000),date:Date.now()};
+}
+function finishTest(T){
+  clearInterval(tick); const r=evaluate(T);
+  save(RKEY,r); const hist=load(HKEY,[]); hist.unshift({pts:r.pts,pass:r.pass,date:r.date}); save(HKEY,hist.slice(0,20));
+  try{localStorage.removeItem(TKEY)}catch{}
+  location.hash='#/vysledok';
+}
+function testView(){
+  let T=load(TKEY,null);
+  if(!T||!T.ids.every(qById)){T=newTest();save(TKEY,T)}
+  inFlash=true; document.body.classList.add('flash'); setHH(); setTitle('Skúšobný test',true);
+  let grid=false;
+  const left=()=>LIMIT-(Date.now()-T.start)/1000;
+  const upd=()=>{const el=$('#timer'); if(left()<=0) return finishTest(T); if(el){el.textContent=mmss(left());el.classList.toggle('low',left()<300)}};
+  clearInterval(tick); tick=setInterval(upd,1000);
+  const draw=()=>{
+    const k=T.cur, q=qById(T.ids[k]), n=T.ids.length, answered=T.ans.filter(a=>a>=0).length;
+    const head=`<div class="fhead"><div class="progress"><i style="width:${answered/n*100}%"></i></div>
+      <span class="count">${grid?answered+' / '+n+' zodp.':(k+1)+' / '+n}</span><span class="timer" id="timer">${mmss(left())}</span></div>`;
+    if(grid){
+      app.innerHTML=head+`<div class="card"><div class="grid">${T.ids.map((_,i)=>`<button data-j="${i}" class="${T.ans[i]>=0?'answered':''} ${i===k?'cur':''}">${i+1}</button>`).join('')}</div></div>
+        <div class="actions"><div><button class="plain" id="back2">Späť na otázku</button><button class="good" id="end">Vyhodnotiť</button></div></div>`;
+      app.querySelector('.grid').onclick=e=>{const j=e.target.dataset.j;if(j!==undefined){T.cur=+j;save(TKEY,T);grid=false;draw()}};
+      $('#back2').onclick=()=>{grid=false;draw()};
+      $('#end').onclick=()=>{const un=n-answered; if(!un||confirm(`Nezodpovedané: ${otazok(un)}. Naozaj vyhodnotiť?`)) finishTest(T)};
+      return;
+    }
+    const [,b]=PLAN[q.cat];
+    app.innerHTML=head+`<div class="card ${q.q.length>200?'xlong':q.q.length>110?'long':''}">
+      <div><span class="pts">${b} ${b===1?'bod':b<5?'body':'bodov'}</span></div>
+      <div class="text">${esc(q.q)}</div>${q.qi?`<img src="img/${q.qi}" alt="">`:''}
+      <div class="opts">${q.o.map((o,i)=>`<button class="opt ${T.ans[k]===i?'sel':''}" data-o="${i}"><b>${'ABC'[i]}</b><span>${esc(o)}</span></button>`).join('')}</div></div>
+      <div class="actions"><div><button class="plain" id="prev" ${k?'':'disabled style="opacity:.4"'}>‹ Späť</button>
+        <button class="plain" id="grid" style="flex:.7">Prehľad</button>
+        ${k<n-1?`<button class="primary" id="next">Ďalej ›</button>`:`<button class="good" id="next">Vyhodnotiť</button>`}</div></div>`;
+    const nx=T.ids[k+1]&&qById(T.ids[k+1]); if(nx&&nx.qi) new Image().src='img/'+nx.qi;
+    app.querySelector('.opts').onclick=e=>{const b=e.target.closest('[data-o]');if(!b)return;T.ans[k]=+b.dataset.o;save(TKEY,T);
+      app.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===b))};
+    $('#prev').onclick=()=>{if(k){T.cur--;save(TKEY,T);draw()}};
+    $('#grid').onclick=()=>{grid=true;draw()};
+    $('#next').onclick=()=>{if(k<n-1){T.cur++;save(TKEY,T);draw();$('.card').scrollTop=0}else{grid=true;draw()}};
+  };
+  draw();
+}
+function resultView(){
+  const r=load(RKEY,null); if(!r){location.hash='';return}
+  setTitle('Výsledok testu',true);
+  const wq=r.wrong.map(w=>({...w,q:qById(w.id)})).filter(w=>w.q);
+  app.innerHTML=`<div class="card score"><div class="big" style="color:${r.pass?'var(--ok)':'var(--bad)'}">${r.pts}</div>
+      <div class="of">zo 100 bodov</div>
+      <span class="badge-res ${r.pass?'ok':'no'}">${r.pass?'Prospel':'Neprospel'}</span>
+      <small>Na úspech treba ${PASS} bodov · čas ${mmss(r.secs)}</small></div>
+    <div class="section">Podľa okruhov</div>
+    <div class="list">${Object.entries(r.per).map(([c,v])=>`<div class="okr"><span class="nm">${c}. ${esc(DATA.cats[c-1])}</span>
+      <span class="vl ${v.got===v.max?'full':'lost'}">${v.got} / ${v.max}</span></div>`).join('')}</div>
+    <div class="section">Chyby (${wq.length})</div>
+    ${wq.length?`<button class="wide-btn" id="markwrong">★ Pridať chyby do Označených</button>`:''}
+    <div class="list" style="margin-top:10px">${wq.map(w=>`<div class="q"><div class="head"><div class="text">${esc(w.q.q)}</div>
+        <button class="star ${marked.has(w.id)?'on':''}" data-star="${w.id}" aria-label="Označiť">${marked.has(w.id)?'★':'☆'}</button></div>
+      ${w.q.qi?`<img loading="lazy" src="img/${w.q.qi}" alt="">`:''}
+      <div class="opts">${w.q.o.map((o,i)=>`<div class="opt ${i===w.q.c?'good':i===w.ans?'bad':''}"><b>${'ABC'[i]}</b><span>${esc(o)}</span></div>`).join('')}</div>
+      ${w.ans<0?`<div class="empty" style="padding:8px 0 0;text-align:left">Bez odpovede</div>`:''}</div>`).join('')||`<div class="empty">Bez chyby, výborne!</div>`}</div>
+    <div class="actions"><div><button class="plain" id="home2">Domov</button><button class="primary" id="again2">Nový test</button></div></div>`;
+  $('#markwrong')&&($('#markwrong').onclick=e=>{wq.forEach(w=>marked.add(w.id));save(KEY,[...marked]);e.target.textContent='★ Pridané do Označených';
+    app.querySelectorAll('.star').forEach(s=>{s.classList.add('on');s.textContent='★'})});
+  $('#home2').onclick=()=>location.hash='';
+  $('#again2').onclick=()=>location.hash='#/test';
+}
+
 function route(){
-  inFlash=false; document.body.classList.remove('flash'); scrollTo(0,0); const h=location.hash;
+  inFlash=false; clearInterval(tick); document.body.classList.remove('flash'); scrollTo(0,0); const h=location.hash;
   let m;
-  if(h==='#/marked') listView('★ Označené',DATA.qs.filter(q=>marked.has(q.id)),{grouped:true,key:'marked'});
+  if(h==='#/test') testView();
+  else if(h==='#/vysledok') resultView();
+  else if(h==='#/marked') listView('★ Označené',DATA.qs.filter(q=>marked.has(q.id)),{grouped:true,key:'marked'});
   else if(m=h.match(/^#\/cat\/(\d+)/)) listView(`${m[1]}. ${DATA.cats[m[1]-1]}`,DATA.qs.filter(q=>q.cat===+m[1]));
   else home();
 }
