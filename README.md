@@ -9,7 +9,7 @@ Webová appka (PWA) na učenie otázok zo súboru `Otazky_A2_so_spravnymi_odpove
 Označené otázky sa ukladajú v prehliadači (localStorage), takže sú viazané na konkrétnu adresu.
 Keď sa zmení IP adresa Macu, appka sa otvorí s prázdnym zoznamom označených otázok.
 
-Nové PDF: `/usr/bin/python3 parse.py` (potrebuje PyMuPDF a Pillow), potom `node data/pridaj_odpovede.js`.
+Nové PDF: `/usr/bin/python3 parse.py` (potrebuje PyMuPDF a Pillow), potom `node data/pridaj_odpovede.js`. Pri každej zmene zvýš verziu `questions.js?v=` v `public/index.html` a `public/sw.js` aj `const C` v `sw.js`.
 
 ## Skúšobný test
 Podľa vyhlášky 9/2009 Z. z. v znení 29/2020 (§ 18): 40 otázok, 30 minút, úspech od 90 zo 100 bodov.
