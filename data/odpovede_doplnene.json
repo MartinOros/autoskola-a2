@@ -1,0 +1,886 @@
+{
+ "1-11": [
+  "miesto, v ktorom sa pretínajú alebo spájajú len cesty I. triedy.",
+  "miesto, v ktorom sa cesta pretína so železničnou traťou."
+ ],
+ "1-12": [
+  "križovatka, na ktorej je prednosť v jazde upravená len zvislými dopravnými značkami.",
+  "križovatka, na ktorej sa prednosť v jazde riadi výlučne pravidlom pravej ruky."
+ ],
+ "1-13": [
+  "každé vozidlo poháňané vlastným motorom vrátane električky a vlaku.",
+  "nekoľajové vozidlo poháňané vlastným motorom okrem trolejbusu."
+ ],
+ "1-14": [
+  "len vozidlo pohybujúce sa výlučne pomocou ľudskej sily vrátane mechanického alebo elektrického vozíka pre osoby so zdravotným postihnutím.",
+  "vozidlo poháňané vlastným motorom s výkonom do 4 kW a trolejbus."
+ ],
+ "1-15": [
+  "malý motocykel, štvorkolka a bicykel vybavený pomocným elektrickým motorčekom s trvalým menovitým výkonom do 4 kW, ktorého výkon sa preruší, keď vozidlo dosiahne rýchlosť 45 km ∙h-1.",
+  "trolejbus, električka a každé vozidlo poháňané elektrickým motorom bez ohľadu na jeho výkon."
+ ],
+ "1-18": [
+  "len vozidlo, ktoré stojí na vozovke v dôsledku poruchy alebo dopravnej nehody.",
+  "len pevná prekážka, ktorá úplne znemožňuje jazdu vozidiel v oboch smeroch."
+ ],
+ "1-19": [
+  "dvojkolesové vozidlo založené na stabilnej rovnováhe, ktoré na zachovanie svojej rovnováhy nepotrebuje žiadny riadiaci systém.",
+  "vozidlo s pevnou rovnováhou, ktorého stabilitu zabezpečujú najmenej tri kolesá."
+ ],
+ "1-20": [
+  "uvedenie vozidla do pokoja na čas nevyhnutne potrebný na urýchlené nastúpenie alebo vystúpenie prepravovaných osôb.",
+  "uvedenie vozidla do pokoja z dôvodu, ktorý je vyvolaný situáciou v cestnej premávke."
+ ],
+ "1-23": [
+  "len motorové vozidlo a jeho prípojné vozidlo.",
+  "motorové vozidlo, nemotorové vozidlo a vlak."
+ ],
+ "1-34": [
+  "mať vodičský preukaz pri sebe len pri jazde mimo obce.",
+  "pri vzdialení sa od vozidla nechať kľúče vo vozidle, aby ho bolo možné v prípade potreby premiestniť."
+ ],
+ "1-37": [
+  "Osoba so sluchovým postihnutím (nepočujúci a nedoslýchavý).",
+  "Osoba vykonávajúca dozor nad deťmi pri prechádzaní cez vozovku."
+ ],
+ "1-38": [
+  "zastaviť vozidlo pred každým priechodom pre chodcov, aj keď na ňom ani pri ňom nie je žiadny chodec.",
+  "dať prednosť chodcovi, ktorý prechádza cez priechod pre chodcov, len pri jazde v obci."
+ ],
+ "1-47": [
+  "je držiteľom vodičského oprávnenia príslušnej skupiny kratšie ako dva roky.",
+  "nie je vlastníkom ani prevádzkovateľom vozidla."
+ ],
+ "1-50": [
+  "telefonovať počas jazdy prostredníctvom systému voľné ruky.",
+  "vojsť na krajnicu pri obchádzaní prekážky cestnej premávky."
+ ],
+ "1-51": [
+  "smie počas vedenia vozidla obsluhovať telefónny prístroj, ak ide rýchlosťou nižšou ako 30 km/h.",
+  "smie viesť motorové vozidlo, ak má v krvi menej ako 0,5 promile alkoholu."
+ ],
+ "1-52": [
+  "znížiť rýchlosť jazdy pred priechodom pre chodcov, ak sa k nemu približuje chodec.",
+  "použiť zvukové výstražné znamenie, ak je to potrebné na odvrátenie hroziacej dopravnej nehody."
+ ],
+ "1-58": [
+  "na jazdu vozidlo, ktoré je označené reklamným nápisom alebo logom súkromnej spoločnosti.",
+  "na jazdu vozidlo, ktoré svojím farebným vyhotovením pripomína vozidlo taxislužby."
+ ],
+ "1-61": [
+  "takisto povinní znížiť rýchlosť jazdy alebo zastaviť vozidlo; to neplatí pre vodiča motocykla.",
+  "oprávnení ho obísť alebo predísť, ak tým neohrozia chodcov na priechode."
+ ],
+ "1-63": [
+  "len pri jazde mimo obce rýchlosťou vyššou ako 50 km/h.",
+  "výlučne tmavými slnečnými okuliarmi, a to aj v hmle, pri snežení alebo v daždi."
+ ],
+ "1-64": [
+  "jazdí rýchlosťou nižšou ako 20 km/h.",
+  "si upravuje ochrannú prilbu alebo štít prilby."
+ ],
+ "1-65": [
+  "reflexný bezpečnostný odev, a to aj za dobrej viditeľnosti.",
+  "ochrannú prilbu určenú pre motocyklistov len pri jazde mimo obce."
+ ],
+ "1-66": [
+  "používať ochranné rukavice.",
+  "navzájom sa rozprávať."
+ ],
+ "1-79": [
+  "osobu sediacu na zadnom sedadle, ak vozidlo jazdí v obci.",
+  "spolujazdca na prednom sedadle, ak vozidlo ide rýchlosťou nižšou ako 50 km/h."
+ ],
+ "1-89": [
+  "uprostred vozovky alebo jazdného pruhu; to neplatí pri obchádzaní, predchádzaní, otáčaní alebo odbočovaní.",
+  "vpravo pri pravom okraji vozovky alebo jazdného pruhu len pri jazde mimo obce."
+ ],
+ "1-91": [
+  "kedykoľvek, ak tým neohrozí chodcov ani cyklistov idúcich po krajnici.",
+  "len pri predchádzaní vozidla, ktoré ide rýchlosťou nižšou ako 30 km/h."
+ ],
+ "1-93": [
+  "smie jazdiť po ľavej krajnici, ak tým neohrozí a neobmedzí pohyb chodcov.",
+  "nesmie jazdiť po krajnici ani vtedy, ak tým neohrozí a neobmedzí pohyb chodcov."
+ ],
+ "1-94": [
+  "smie jazdiť po chodníku, ak tým neohrozí a neobmedzí pohyb chodcov.",
+  "je povinný jazdiť po krajnici, aj keď tým obmedzí pohyb chodcov."
+ ],
+ "1-96": [
+  "výhradne ľavý jazdný pruh; v ostatných jazdných pruhoch vodič smie jazdiť, ak je to potrebné na obchádzanie, otáčanie alebo na odbočovanie.",
+  "ktorýkoľvek jazdný pruh, ak tým neohrozí ani neobmedzí ostatných účastníkov cestnej premávky."
+ ],
+ "1-104": [
+  "ktorýkoľvek jazdný pruh, ak tým neobmedzí plynulosť cestnej premávky.",
+  "výhradne ľavý jazdný pruh; v pravom jazdnom pruhu smie jazdiť, len ak je to potrebné na odbočovanie vpravo."
+ ],
+ "1-105": [
+  "výhradne pravý jazdný pruh; v ostatných jazdných pruhoch smie jazdiť, len ak je to potrebné na predchádzanie.",
+  "ktorýkoľvek jazdný pruh; to neplatí pre vodiča osobného automobilu a vodiča motocykla s najväčšou konštrukčnou rýchlosťou nad 45 km/h."
+ ],
+ "1-106": [
+  "výhradne pravý jazdný pruh.",
+  "výhradne druhý jazdný pruh od pravého okraja vozovky."
+ ],
+ "1-128": [
+  "ide o vzájomné predchádzanie.",
+  "ide o predchádzanie, len ak električka ide rýchlejšie ako ostatné vozidlá."
+ ],
+ "1-135": [
+  "zastaviť vozidlo; ak je na zastávke viac vozidiel, vodič je povinný zastaviť vozidlo vedľa prvého z nich.",
+  "dať zvukové výstražné znamenie a pokračovať v jazde bez zastavenia."
+ ],
+ "1-151": [
+  "predchádzané vozidlo je motocykel bez postranného vozíka.",
+  "ide v obci rýchlosťou vyššou ako 30 km/h."
+ ],
+ "1-152": [
+  "je za ním ďalšie vozidlo, ktoré úkon predchádzania ešte nezačalo.",
+  "jazdí po ceste s dvoma jazdnými pruhmi v jednom smere jazdy."
+ ],
+ "1-155": [
+  "na ceste s dvoma alebo s viacerými jazdnými pruhmi v jednom smere jazdy; to neplatí pre vodiča motocykla.",
+  "vpravo vozidlo, ktoré mení smer jazdy vľavo, ak už nie je pochybnosť o ďalšom smere jeho jazdy."
+ ],
+ "1-157": [
+  "má prednosť v jazde pred chodcom idúcim po krajnici a pred cyklistom jazdiacim po krajnici.",
+  "je povinný dávať zvukové výstražné znamenie po celý čas predchádzania."
+ ],
+ "1-158": [
+  "motocykel bez postranného vozíka alebo nemotorové vozidlo pri jazde cez križovatku.",
+  "na hlavnej ceste mimo obce, ak je najvyššia dovolená rýchlosť vyššia ako 80 km/h."
+ ],
+ "1-166": [
+  "má pred električkou prednosť v jazde.",
+  "je povinný dávať zvukové výstražné znamenie, kým električka nezastaví."
+ ],
+ "1-169": [
+  "vždy zastaviť vozidlo.",
+  "dávať zvukové výstražné znamenie."
+ ],
+ "1-173": [
+  "čo najďalej vpravo v časti vozovky určenej pre jeho smer jazdy s ohľadom na rozmery vozidla alebo nákladu a šírku vozovky.",
+  "do stredu vozovky, a to aj do časti vozovky určenej pre opačný smer jazdy."
+ ],
+ "1-175": [
+  "neumožňuje prejsť cez križovatku bez zníženia rýchlosti jazdy.",
+  "nedovoľuje zaradiť sa za križovatkou do pravého jazdného pruhu."
+ ],
+ "1-176": [
+  "len vtedy, ak sa ku križovatke približuje iné vozidlo.",
+  "vždy vo vzdialenosti najmenej 20 m pred hranicou križovatky."
+ ],
+ "1-177": [
+  "len vtedy, ak nemá na križovatku náležitý rozhľad.",
+  "na hranici križovatky, aj keď odtiaľ nemá na križovatku náležitý rozhľad."
+ ],
+ "1-179": [
+  "smie vchádzať na cestu bez očistenia, ak ide o poľnohospodárske alebo lesné vozidlo.",
+  "musí byť očistené len vtedy, ak vchádza na cestu I. triedy."
+ ],
+ "1-180": [
+  "do časti vozovky určenej pre opačný smer jazdy.",
+  "čo najďalej vpravo, a to aj na chodník, ak tým neohrozí chodcov."
+ ],
+ "1-188": [
+  "na parkovisku a v jeho tesnej blízkosti.",
+  "na ceste s jedným jazdným pruhom v každom smere jazdy."
+ ],
+ "1-190": [
+  "sa smie otáčať, ale nesmie cúvať.",
+  "smie cúvať, ak tým neohrozí cyklistov ani chodcov."
+ ],
+ "1-199": [
+  "Áno, ak tým neohrozí ani neobmedzí ostatných účastníkov cestnej premávky.",
+  "Áno, ale len ak je vozovka dostatočne široká."
+ ],
+ "1-203": [
+  "2,5 m pre každý smer jazdy.",
+  "3,5 m pre oba smery jazdy spolu."
+ ],
+ "1-207": [
+  "vždy zapnúť výstražné svetelné znamenie.",
+  "ponechať medzi svojím vozidlom a vozidlom pred ním vzdialenosť najmenej 5 m."
+ ],
+ "1-215": [
+  "ho použiť nemusí, ak zamkne dvere vozidla.",
+  "je povinný ho použiť len v noci."
+ ],
+ "1-222": [
+  "na križovatke a vo vzdialenosti kratšej ako 50 m pred hranicou križovatky a 50 m za ňou.",
+  "na jednosmernej ceste pri ľavom okraji vozovky."
+ ],
+ "1-223": [
+  "vo vzdialenosti kratšej ako 20 m pred priechodom pre chodcov a 20 m za ním.",
+  "v stúpaní alebo v klesaní cesty, aj keď vozidlo zabezpečí proti samovoľnému pohybu."
+ ],
+ "1-224": [
+  "na priechode pre chodcov, na mieste na prechádzanie alebo na priechode pre cyklistov a vo vzdialenosti kratšej ako 15 m pred nimi a za nimi.",
+  "na vyhradenom parkovisku, ak ide o vozidlo, pre ktoré je parkovisko vyhradené."
+ ],
+ "1-225": [
+  "10 m pred ním.",
+  "3 m pred ním a 3 m za ním."
+ ],
+ "1-238": [
+  "na mieste, kde po zastavení zostane voľný jazdný pruh široký najmenej 3 m pre každý smer jazdy.",
+  "vo vzdialenosti kratšej ako 50 m za priechodom pre cyklistov."
+ ],
+ "1-242": [
+  "jazdiť rýchlosťou vyššou ako 30 km/h.",
+  "jazdiť s rozsvietenými stretávacími svetlometmi."
+ ],
+ "1-243": [
+  "dávať znamenie o zmene smeru jazdy.",
+  "znížiť rýchlosť jazdy."
+ ],
+ "1-244": [
+  "smie zastaviť, ale nesmie stáť.",
+  "smie zastaviť a stáť, ak má rozsvietené výstražné svetelné znamenie."
+ ],
+ "1-246": [
+  "smie zastaviť a stáť bez zaplatenia poplatku, ak vodič zostane vo vozidle.",
+  "smie stáť bez zaplatenia poplatku, ak má rozsvietené výstražné svetelné znamenie."
+ ],
+ "1-252": [
+  "v obci zakázané zastavenie a státie na inom mieste než na mieste označenom ako parkovisko.",
+  "mimo obce zakázané len státie; zastavenie je dovolené aj na inom mieste než na parkovisku."
+ ],
+ "1-253": [
+  "Smie zastaviť, ale nesmie stáť.",
+  "Smie zastaviť aj stáť, ak tým neobmedzí plynulosť cestnej premávky."
+ ],
+ "1-254": [
+  "nechať motor v chode, aby mohol vozidlo v prípade potreby premiestniť.",
+  "otočiť vozidlo a vrátiť sa ním k vjazdu do tunela."
+ ],
+ "1-256": [
+  "pri jazde vozidla po diaľnici vznikne porucha vozidla, pre ktorú sa toto vozidlo stane nepojazdným.",
+  "zastaví vozidlo pred priechodom pre chodcov, aby umožnil chodcom prejsť cez vozovku."
+ ],
+ "1-257": [
+  "nechať zapnuté nezávislé kúrenie, aby vo vozidle neklesla teplota.",
+  "vyjsť z tunela cúvaním k najbližšiemu vjazdu do tunela."
+ ],
+ "1-258": [
+  "zapnúť diaľkové svetlomety, aby upozornil vodičov ostatných vozidiel.",
+  "zostať vo vozidle so zatvorenými oknami a neopúšťať ho až do príchodu policajta."
+ ],
+ "1-259": [
+  "v súvislosti so zaisťovaním bezpečnosti cestnej premávky, aj keď nemajú na sebe reflexný bezpečnostný odev.",
+  "po ľavom okraji vozovky proti smeru jazdy vozidiel."
+ ],
+ "1-267": [
+  "len vtedy, ak sa k železničnému priecestiu približuje vlak.",
+  "vo vzdialenosti najmenej 50 m pred železničným priecestím."
+ ],
+ "1-268": [
+  "zastaviť vozidlo len vtedy, ak sa dáva výstraha priecestným zabezpečovacím zariadením.",
+  "zastaviť vozidlo priamo na koľajisku, odkiaľ má najlepší rozhľad na trať."
+ ],
+ "1-269": [
+  "Ak sa dáva prerušované biele svetlo priecestného zabezpečovacieho zariadenia.",
+  "Ak je znížená viditeľnosť, napríklad v hmle alebo pri snežení."
+ ],
+ "1-270": [
+  "sú závory úplne zdvihnuté a priecestné zabezpečovacie zariadenie nedáva výstrahu.",
+  "sa k železničnému priecestiu z opačného smeru približuje iné vozidlo."
+ ],
+ "1-271": [
+  "Ak osoba pribratá na zaistenie bezpečnej prevádzky železničného priecestia dáva pokyn na jazdu vodorovným kývaním ruky so zástavkou.",
+  "Ak je železničné priecestie označené len výstražným krížom."
+ ],
+ "1-280": [
+  "nie je povinný ju poslúchnuť, lebo pokyny na jazdu smie dávať len policajt.",
+  "je povinný zastaviť vozidlo a počkať na príchod policajta."
+ ],
+ "1-281": [
+  "Áno, smie vchádzať na železničné priecestie, ak sa závory už zdvíhajú a nesvieti prerušované červené svetlo.",
+  "Nie, nesmie vchádzať na železničné priecestie za žiadnych okolností."
+ ],
+ "1-285": [
+  "jazdí v priebežnom jazdnom pruhu a nemení smer jazdy.",
+  "len znižuje rýchlosť jazdy pred križovatkou."
+ ],
+ "1-287": [
+  "Nie, pokračujem po hlavnej ceste, a preto znamenie o zmene smeru jazdy nedávam.",
+  "Áno, ale len vtedy, ak sa za mnou nachádza iné vozidlo."
+ ],
+ "1-289": [
+  "Nie, pokračuje po hlavnej ceste, a preto znamenie o zmene smeru jazdy nedáva.",
+  "Áno, ale len vtedy, ak sa na križovatke nachádzajú aj iné vozidlá."
+ ],
+ "1-293": [
+  "o zmene smeru jazdy na tú istú stranu.",
+  "o hroziacom nebezpečenstve pre vodičov idúcich za ním."
+ ],
+ "1-295": [
+  "po celý čas trvania jazdného úkonu.",
+  "až po skončení jazdného úkonu."
+ ],
+ "1-303": [
+  "zvukové výstražné znamenie.",
+  "znamenie výstražnými smerovými svietidlami."
+ ],
+ "1-304": [
+  "Zapnutím výstražných smerových svietidiel na dobu najmenej päť sekúnd.",
+  "Prerušovaným zapínaním predných hmlových svetlometov."
+ ],
+ "1-306": [
+  "ak chce poďakovať inému vodičovi za umožnenie predchádzania.",
+  "ak zastaví vozidlo na okraji vozovky v obci na účel vystúpenia spolujazdca."
+ ],
+ "1-308": [
+  "stretávacie svetlomety len mimo obce, to neplatí pre nemotorové vozidlo, ktoré nemusí mať rozsvietené svietidlá ani počas zníženej viditeľnosti.",
+  "diaľkové svetlomety alebo predné hmlové svetlomety, to neplatí pre motocykel, ktorý musí mať rozsvietené svietidlá len počas zníženej viditeľnosti."
+ ],
+ "1-310": [
+  "mimo obce na neosvetlenej ceste, ak pred ním ani v protismere nejde žiadne vozidlo.",
+  "ak jazdí v noci mimo obce rýchlosťou vyššou ako 60 km.h-1."
+ ],
+ "1-314": [
+  "smie použiť diaľkové svetlomety, ak jazdí mimo obce.",
+  "je povinný zapnúť predné hmlové svetlomety."
+ ],
+ "1-319": [
+  "smie byť zakrytá alebo znečistená, ak vozidlo jazdí len počas dňa za dobrej viditeľnosti.",
+  "smie byť zakrytá farebnou fóliou, ak tá nemení farbu vyžarovaného svetla o viac ako 10 %."
+ ],
+ "1-329": [
+  "smie vliecť len pomocou tyče, nie však lanom.",
+  "smie použiť ako vlečné vozidlo len na vlečenie iného motocykla."
+ ],
+ "1-348": [
+  "za tri sekundy.",
+  "za štyri sekundy."
+ ],
+ "1-367": [
+  "používa zvláštne výstražné svetlo oranžovej farby pri vykonávaní prác na ceste.",
+  "je označené nápisom POLÍCIA alebo ZÁCHRANNÁ SLUŽBA, aj keď nepoužíva zvukové znamenie ani zvláštne výstražné svetlo."
+ ],
+ "1-368": [
+  "len vtedy, ak ide vozidlo s právom prednostnej jazdy v rovnakom smere jazdy.",
+  "a za každých okolností zastaviť vozidlo na pravom okraji vozovky."
+ ],
+ "1-373": [
+  "každé vozidlo s právom prednostnej jazdy.",
+  "len vozidlo hasičskej jednotky a záchrannej zdravotnej služby."
+ ],
+ "1-375": [
+  "pokračovať v jazde bez zmeny rýchlosti, pretože nejde o vozidlo s právom prednostnej jazdy.",
+  "vždy zastaviť vozidlo pri pravom okraji vozovky a počkať, kým vozidlo prejde."
+ ],
+ "1-379": [
+  "len vtedy, ak sa prekážka nachádza na diaľnici alebo na ceste pre motorové vozidlá.",
+  "a oznámiť to príslušnému obecnému úradu."
+ ],
+ "1-382": [
+  "na vyhradenom parkovisku pre vozidlo s konkrétnym evidenčným číslom vozidla, pre osobu so zdravotným postihnutím alebo pre vozidlo s konkrétnym parkovacím preukazom, ak je také parkovisko preň určené.",
+  "na mieste, kde je státie dovolené, a jeho vodič sa od vozidla vzdialil na dlhšie ako dve hodiny."
+ ],
+ "1-383": [
+  "okresný úrad, v ktorého obvode prekážka vznikla.",
+  "len prevádzkovateľ odťahovej služby."
+ ],
+ "1-384": [
+  "osobou s telesným postihnutím.",
+  "osobou staršou ako 65 rokov."
+ ],
+ "1-387": [
+  "vodičom so zahraničným vodičským preukazom.",
+  "osobou so zdravotným postihnutím."
+ ],
+ "1-394": [
+  "smie dovoliť, aby sa prekročil povolený počet prepravovaných osôb, ak jazdí len v obci.",
+  "je povinný mať pri sebe predpísané doklady len pri jazde mimo obce."
+ ],
+ "1-402": [
+  "osoba mladšia ako 15 rokov.",
+  "osoba, ktorá nie je držiteľom vodičského oprávnenia skupiny A."
+ ],
+ "1-404": [
+  "na zadnom sedadle osobného automobilu.",
+  "v autobuse."
+ ],
+ "1-406": [
+  "prepravovanie batožiny v bočných kufroch.",
+  "svietenie stretávacími svetlometmi počas dňa."
+ ],
+ "1-432": [
+  "vozidla prepravujúceho nebezpečné veci.",
+  "autobusu, ktorý prepravuje skupinu detí."
+ ],
+ "1-435": [
+  "Nie, chodník smú používať výlučne chodci.",
+  "Áno, ale len vodič motocykla, ak jazdí rýchlosťou chôdze."
+ ],
+ "1-436": [
+  "Áno, ak ide o zastavenie alebo státie vozidla, pri ktorom ostane súvislá voľná šírka chodníka najmenej 1 m.",
+  "Nie, vodič motocykla nesmie na chodníku zastaviť ani stáť za žiadnych okolností."
+ ],
+ "1-437": [
+  "Áno, ak ide o zastavenie alebo státie bicykla, pri ktorom ostane voľná šírka chodníka najmenej 0,5 m.",
+  "Nie, vodič bicykla nesmie na chodníku zastaviť ani stáť za žiadnych okolností."
+ ],
+ "1-442": [
+  "musí vždy použiť ľavú krajnicu alebo ľavý okraj vozovky; chodník použiť nesmie.",
+  "smie použiť chodník bez obmedzení, a to aj vtedy, ak tým obmedzí chodcov."
+ ],
+ "1-443": [
+  "má vždy prednosť pred vozidlami, aj keď neprechádza po priechode pre chodcov.",
+  "smie vstúpiť na vozovku aj bezprostredne pred blížiacim sa vozidlom, ak prechádza po priechode pre chodcov."
+ ],
+ "1-446": [
+  "Vodič mopedu, ak pritom ide rýchlosťou chôdze a neohrozí chodcov.",
+  "Vodič osobného automobilu, ak pritom neohrozí a neobmedzí chodcov."
+ ],
+ "1-451": [
+  "po ľavej strane chodníka, aj keď tým obmedzujú chodcov.",
+  "len po vozovke, a to rýchlosťou najviac 15 km.h-1."
+ ],
+ "1-456": [
+  "jazdiť výlučne po chodníku alebo po cestičke pre cyklistov.",
+  "byť vždy sprevádzaný osobou staršou ako 18 rokov."
+ ],
+ "1-457": [
+  "10 rokov.",
+  "18 rokov."
+ ],
+ "1-458": [
+  "kolobežke bez pomocného motorčeka.",
+  "bicykli s pomocným motorčekom."
+ ],
+ "1-459": [
+  "po ľavej strane chodníka rýchlosťou najviac 25 km.h-1, ak neohrozí chodcov.",
+  "po diaľnici a ceste pre motorové vozidlá, ak neohrozí ostatných účastníkov cestnej premávky."
+ ],
+ "1-460": [
+  "vedľa iného vodiča samovyvažovacieho vozidla, ak tým neohrozí ani neobmedzí chodcov ani cyklistov.",
+  "po chodníku rýchlosťou najviac 25 km.h-1, ak neohrozí a neobmedzí chodcov."
+ ],
+ "1-461": [
+  "najviac dvaja vedľa seba.",
+  "vedľa seba, ak tým neohrozia ani neobmedzia chodcov."
+ ],
+ "1-462": [
+  "smie jazdiť rýchlosťou najviac 20 km.h-1.",
+  "má prednosť pred chodcami idúcimi po chodníku."
+ ],
+ "1-470": [
+  "vybavená zastavovacím terčom a píšťalkou.",
+  "sprevádzaná policajtom."
+ ],
+ "1-472": [
+  "len chodník; ak chodník nie je, ľavú krajnicu.",
+  "len pravú polovicu cesty v smere chôdze."
+ ],
+ "1-478": [
+  "Áno, kedykoľvek, ak ide rýchlosťou najviac 20 km.h-1.",
+  "Nie, za žiadnych okolností."
+ ],
+ "1-480": [
+  "Áno, len ak to umožňuje dopravná značka.",
+  "Nie, ak dopravnou značkou nie je určené inak."
+ ],
+ "1-487": [
+  "Áno, kdekoľvek, ak tým neobmedzí chodcov.",
+  "Áno, ak zostane voľný jazdný pruh široký najmenej 3 m."
+ ],
+ "1-488": [
+  "Nie, ak dopravnou značkou nie je určené inak.",
+  "Áno, len na vyznačenom parkovisku."
+ ],
+ "1-491": [
+  "Nie, ak dopravnou značkou nie je určené inak.",
+  "Áno, aj keď tým obmedzí pohyb chodcov, ak státie netrvá dlhšie ako tri minúty."
+ ],
+ "1-494": [
+  "dovolená rýchlosťou najviac 30 km.h-1.",
+  "dovolená, ak tým neohrozia ani neobmedzia cyklistov."
+ ],
+ "1-499": [
+  "\"Voľno\" pre smer, ku ktorému stojí policajt čelom alebo chrbtom s upaženou rukou alebo upaženými rukami.",
+  "\"Čakaj\" pre vodičov prichádzajúcich zo všetkých smerov."
+ ],
+ "1-501": [
+  "\"Stoj\" pre smer, ku ktorému stojí policajt bokom s upaženou rukou alebo upaženými rukami.",
+  "\"Voľno\" len pre vodičov odbočujúcich vpravo; ostatní vodiči musia zastaviť."
+ ],
+ "1-510": [
+  "len vodič vozidla s právom prednostnej jazdy.",
+  "len učiteľ autoškoly počas výcviku."
+ ],
+ "1-511": [
+  "Jazdný pruh sa môže používať len na predchádzanie.",
+  "Jazdný pruh je vyhradený pre vozidlá pravidelnej verejnej dopravy osôb."
+ ],
+ "1-512": [
+  "Jazdný pruh je uzavretý a vodič ho nesmie používať.",
+  "Vodič je povinný preradiť sa z jazdného pruhu do susedného jazdného pruhu."
+ ],
+ "1-515": [
+  "„Voľno“; vodič smie vojsť do križovatky.",
+  "„Pozor“; vodič smie odbočiť vpravo, ak neohrozí ostatných účastníkov cestnej premávky."
+ ],
+ "1-519": [
+  "„Voľno“; vodič smie pokračovať v jazde len v smere vyznačenom šípkami.",
+  "„Čakaj“; vodič sa musí pripraviť na jazdu a platí pre všetky smery jazdy bez ohľadu na šípky."
+ ],
+ "1-522": [
+  "zakazuje pokračovať v jazde v smere šípky, kým svieti signál červenej farby v tvare plného kruhu.",
+  "umožňuje pokračovať v jazde v smere šípky len vozidlám s právom prednostnej jazdy, ak svieti signál červenej farby v tvare plného kruhu."
+ ],
+ "2-4": [
+  "z pravého jazdného pruhu do stredného jazdného pruhu je povinný dať prednosť v jazde vodičovi prechádzajúcemu do stredného jazdného pruhu z ľavého jazdného pruhu.",
+  "z ľavého jazdného pruhu do stredného jazdného pruhu má prednosť v jazde pred vodičom jazdiacim v strednom jazdnom pruhu."
+ ],
+ "2-10": [
+  "80 km.h-1, na diaľnici 110 km.h-1.",
+  "100 km.h-1, na diaľnici 150 km.h-1."
+ ],
+ "2-11": [
+  "110 km.h-1.",
+  "150 km.h-1."
+ ],
+ "2-12": [
+  "80 km.h-1.",
+  "110 km.h-1."
+ ],
+ "2-22": [
+  "60 km.h-1.",
+  "40 km.h-1."
+ ],
+ "2-30": [
+  "len protiidúcim motorovým vozidlám; nemotorovým vozidlám, električkám ani chodcom prechádzajúcim cez vozovku prednosť v jazde dávať nemusí.",
+  "len električkám idúcim v protismere a chodcom prechádzajúcim cez vozovku, nie však protiidúcim motorovým vozidlám ani cyklistom idúcim súbežne s cestou."
+ ],
+ "2-41": [
+  "len protiidúcim motorovým vozidlám; električkám, nemotorovým vozidlám ani chodcom prednosť v jazde dávať nemusí.",
+  "len chodcom prechádzajúcim cez vozovku, pretože pri otáčaní má prednosť v jazde pred protiidúcimi vozidlami."
+ ],
+ "2-46": [
+  "zastaviť vozidlo pred železničným priecestím a pokračovať v jazde až po zhasnutí bieleho svetla.",
+  "100 m pred železničným priecestím a pri jeho prechádzaní jazdiť rýchlosťou najviac 30 km.h-1."
+ ],
+ "2-58": [
+  "40 km.h-1.",
+  "10 km.h-1."
+ ],
+ "2-59": [
+  "10 km.h-1.",
+  "30 km.h-1."
+ ],
+ "2-61": [
+  "Najviac 30 km.h-1.",
+  "Najviac 40 km.h-1."
+ ],
+ "2-68": [
+  "Najviac 50 km.h-1.",
+  "Najviac 10 km.h-1."
+ ],
+ "3-157": [
+  "Dvojkolesové motorové vozidlá s postranným vozíkom alebo bez neho s výnimkou mopedov a trojkolesové motorové vozidlá, ktorých prevádzková hmotnosť nepresahuje 400 kg",
+  "Bicykle s elektrickým pomocným pohonom, ktorého výkon sa preruší, keď bicykel dosiahne rýchlosť 25 km/h"
+ ],
+ "4-33": [
+  "Zelené vozidlo.",
+  "Žlté vozidlo."
+ ],
+ "6-2": [
+  "chladenia.",
+  "nabíjania."
+ ],
+ "6-76": [
+  "päť alebo šesť stupňovou manuálnou prevodovkou, ktorá sa ovláda pravou nohou.",
+  "dvoj alebo troj stupňovou automatickou prevodovkou, ktorá sa ovláda ľavou rukou."
+ ],
+ "6-77": [
+  "medzi druhým a tretím rýchlostným stupňom.",
+  "nad najvyšším rýchlostným stupňom."
+ ],
+ "6-78": [
+  "poškodiť brzdový systém.",
+  "vybiť akumulátor."
+ ],
+ "6-79": [
+  "Ľavou rukou stlačíme páčku spojky a súčasne pridáme plyn. Ľavou nohou zatlačíme radiacu páčku nadol. Potom prudko pustíme spojku a v zábere spojky uberieme plyn.",
+  "Pravou rukou stlačíme páčku spojky a takmer súčasne uberieme plyn. Pravou nohou potiahneme radiacu páčku nahor. Potom plynule povolíme spojku a v zábere spojky pridáme plyn."
+ ],
+ "6-80": [
+  "k prudkému zrýchleniu motocykla a nadvihnutiu predného kolesa.",
+  "ku zablokovaniu predného kolesa motocykla, ku šmyku a následnému pádu."
+ ],
+ "6-81": [
+  "prednú brzdu približne na 30 %.",
+  "zadnú brzdu približne na 80 %."
+ ],
+ "6-82": [
+  "prenáša na zadné koleso.",
+  "rozkladá rovnomerne na obe kolesá."
+ ],
+ "6-83": [
+  "menším či väčším stlačením páčky brzdy ľavou rukou.",
+  "menším či väčším stlačením pedálu brzdy pravou nohou."
+ ],
+ "6-84": [
+  "vždy pri prudkom brzdení na suchej vozovke, pretože zadná brzda má väčší brzdný účinok ako predná brzda.",
+  "pri každom brzdení vo vysokej rýchlosti, aby nedošlo k prenosu hmotnosti na predné koleso a k prevráteniu motocykla."
+ ],
+ "6-85": [
+  "len zadnou brzdou.",
+  "striedavo prednou a zadnou brzdou."
+ ],
+ "6-86": [
+  "ešte pred začatím brzdenia.",
+  "súčasne so stlačením páčky prednej brzdy."
+ ],
+ "6-87": [
+  "iba nohy.",
+  "ruky a ľavú nohu na radenie prevodových stupňov."
+ ],
+ "6-88": [
+  "prednú ani zadnú brzdu.",
+  "plynovú rukoväť ani štartér."
+ ],
+ "6-89": [
+  "súčasne stlačiť páčku spojky.",
+  "súčasne pridať plný plyn."
+ ],
+ "6-90": [
+  "stláčaním pedálu plynu pravou nohou.",
+  "otáčaním ľavej rukoväte riadidiel."
+ ],
+ "6-91": [
+  "Spojka sa ovláda ľavou rukou a zadná brzda pravou nohou.",
+  "Spojka sa ovláda ľavou nohou a zadná brzda pravou rukou."
+ ],
+ "6-92": [
+  "len na pár metrov dopredu.",
+  "iba v úseku bezprostredne pred predným kolesom."
+ ],
+ "7-6": [
+  "dvojkolesové motorové vozidlá bez postranného vozíka alebo s postranným vozíkom vybavené motorom s najväčšou konštrukčnou rýchlosťou vyššou ako 45 km ∙h-1, ktorých zdvihový objem valcov motora nepresahuje 250 cm3 a výkon nie je väčší ako 25 kW a pomer výkon/najväčšia prípustná celková hmotnosť nepresahuje 0,2 kW/kg.",
+  "dvojkolesové motorové vozidlá bez postranného vozíka alebo s postranným vozíkom vybavené motorom s najväčšou konštrukčnou rýchlosťou vyššou ako 45 km ∙h-1, ktorých zdvihový objem valcov motora presahuje 125 cm3 a výkon je väčší ako 35 kW."
+ ],
+ "7-7": [
+  "motorové trojkolky, ktorými sú vozidlá s tromi symetricky usporiadanými kolesami, vybavené motorom, ktorý má zdvihový objem väčší ako 50 cm3, ak je to spaľovací motor, alebo s najvyššou konštrukčnou rýchlosťou vyššou ako 45 km ∙h-1, ktorých výkon presahuje 15 kW.",
+  "dvojkolesové motorové vozidlá bez postranného vozíka alebo s postranným vozíkom, ktorých výkon nepresahuje 35 kW a pomer výkon/najväčšia prípustná celková hmotnosť nepresahuje 0,2 kW/kg."
+ ],
+ "7-8": [
+  "A a B1.",
+  "B1 a T."
+ ],
+ "8-19": [
+  "hasiaci prístroj.",
+  "náhradné koleso s náradím na jeho výmenu."
+ ],
+ "9-58": [
+  "plynulo brzdiť, plynulo akcelerovať a plynulo točiť riadidlami",
+  "znižovať rýchlosť jazdy a zväčšovať odstup od vpredu idúceho vozidla"
+ ],
+ "9-95": [
+  "Zo začiatku by mal zvoliť dlhé a náročné trasy, ktoré nepozná, aby rýchlo získal skúsenosti",
+  "V prípade strachu z niektorej križovatky ju prejdite čo najrýchlejšie, aby ste v nej strávili čo najmenej času"
+ ],
+ "9-144": [
+  "iba náklonom motocykla na jednu alebo druhú stranu.",
+  "iba pridávaním a uberaním plynu."
+ ],
+ "9-145": [
+  "iba natáčaním riadidiel bez náklonu motocykla.",
+  "striedavým brzdením prednou a zadnou brzdou."
+ ],
+ "9-146": [
+  "v najväčšom náklone v zákrute.",
+  "až po výjazde zo zákruty."
+ ],
+ "9-147": [
+  "pred vjazdom do zákruty.",
+  "v strede zákruty pri najväčšom náklone."
+ ],
+ "9-148": [
+  "len na jeden až dva metre dopredu.",
+  "iba tesne pred predným kolesom motocykla."
+ ],
+ "10-41": [
+  "prevodovka.",
+  "spojka."
+ ],
+ "10-42": [
+  "nasávanie.",
+  "výbuch (expanzia)."
+ ],
+ "10-43": [
+  "nasávanie, výbuch (expanzia), stláčanie (kompresia), výfuk.",
+  "stláčanie (kompresia), nasávanie, výfuk, výbuch (expanzia)."
+ ],
+ "10-45": [
+  "prenášať točivý moment z prevodovky na hnacie koleso a umožniť trvalé odpojenie hnacieho kolesa od prevodovky pri jazde zotrvačnosťou, brzdení a parkovaní motocykla.",
+  "meniť prevodový pomer medzi motorom a hnacím kolesom podľa rýchlosti jazdy a zabrániť zablokovaniu kolies pri prudkom brzdení, radení prevodových stupňov a zastavení motocykla."
+ ],
+ "10-46": [
+  "prenášať točivý moment z prevodovky na zadné koleso.",
+  "meniť prevodový pomer medzi motorom a zadným kolesom."
+ ],
+ "10-47": [
+  "mechanická ovládaná páčkou ľavou rukou.",
+  "hydraulická ovládaná pedálom ľavou nohou."
+ ],
+ "10-48": [
+  "spravidla rukou.",
+  "spravidla tlačidlami na riadidlách."
+ ],
+ "10-49": [
+  "ovláda páčkou ľavou rukou.",
+  "ovláda pedálom ľavou nohou."
+ ],
+ "10-50": [
+  "z motora do prevodovky.",
+  "z prevodovky na predné koleso."
+ ],
+ "10-51": [
+  "spravidla kardanový hriadeľ s diferenciálom.",
+  "spravidla hydraulický menič krútiaceho momentu."
+ ],
+ "10-54": [
+  "len olovnatý benzín.",
+  "len motorová nafta."
+ ],
+ "10-55": [
+  "akékoľvek palivo dostupné na čerpacej stanici.",
+  "vždy zmes benzínu a motorovej nafty."
+ ],
+ "10-56": [
+  "zapaľuje stlačenú zmes paliva a vzduchu vo valci motora.",
+  "čistí výfukové plyny od škodlivých látok pred ich vypustením do ovzdušia."
+ ],
+ "10-57": [
+  "katalyzátor výfukových plynov.",
+  "zapaľovacia sústava obsahujúca zapaľovaciu cievku."
+ ],
+ "10-58": [
+  "prípravu zápalnej zmesi benzínu a vzduchu.",
+  "zvýšenie trenia medzi pohyblivými časťami motora a tvorbu karbónu na lepšie odvádzanie tepla."
+ ],
+ "10-59": [
+  "pomocou hustomera.",
+  "podľa ukazovateľa množstva paliva na prístrojovom paneli."
+ ],
+ "10-60": [
+  "olejovou náplňou v kľukovej skrini rovnako ako pri štvordobom motore.",
+  "pomocou zmesi benzínu a motorovej nafty."
+ ],
+ "10-61": [
+  "zmes benzínu a oleja.",
+  "olej pre dvojdobé motory."
+ ],
+ "10-63": [
+  "ohrev motora na čo najvyššiu teplotu.",
+  "zníženie teploty brzdových kotúčov pri brzdení."
+ ],
+ "10-64": [
+  "motor by mal čo najdlhšie bežať vo voľnobehu na mieste.",
+  "je potrebné pravidelne dopĺňať chladiacu kvapalinu."
+ ],
+ "10-67": [
+  "bubnové.",
+  "páskové."
+ ],
+ "10-68": [
+  "prednej.",
+  "postranného vozíka."
+ ],
+ "10-69": [
+  "pneumaticky (pomocou stlačeného vzduchu).",
+  "elektricky (pomocou elektromotora)."
+ ],
+ "10-70": [
+  "pneumaticky (pomocou stlačeného vzduchu).",
+  "elektromagneticky (pomocou elektrického prúdu)."
+ ],
+ "10-71": [
+  "skrátenie brzdnej dráhy na každom povrchu vozovky.",
+  "zníženie opotrebenia brzdových doštičiek a pneumatík."
+ ],
+ "10-72": [
+  "systém automatického brzdenia.",
+  "systém kontroly preklzu hnacieho kolesa pri rozjazde."
+ ],
+ "10-73": [
+  "pneumatiky a brzdového kotúča.",
+  "blatníka a tlmiča pruženia."
+ ],
+ "10-74": [
+  "plechové a plastové.",
+  "plné diskové a lisované oceľové."
+ ],
+ "10-75": [
+  "1 mm a u kategórii motocyklov L1e (moped, malý motocykel) 0,5 mm.",
+  "2 mm a u kategórii motocyklov L1e (moped, malý motocykel) 1,6 mm."
+ ],
+ "10-76": [
+  "pneumatika určená na zimné obdobie (blato a sneh).",
+  "pneumatika určená len na zadné koleso motocykla."
+ ],
+ "10-77": [
+  "diagonálne (bias).",
+  "protektorované (obnovené)."
+ ],
+ "10-79": [
+  "alternátor.",
+  "zapaľovacia cievka."
+ ],
+ "10-80": [
+  "alternátor (dynamo).",
+  "štartér."
+ ],
+ "10-81": [
+  "prúdovým chráničom s vypínacím prúdom 30 mA.",
+  "len hlavným vypínačom zapaľovania."
+ ],
+ "10-82": [
+  "zdroje elektrickej energie.",
+  "prvky palivovej sústavy."
+ ],
+ "10-83": [
+  "motocykel nebude možné vôbec zabrzdiť.",
+  "systém ABS pracuje správne a kontrolka len signalizuje jeho zapnutie."
+ ],
+ "10-84": [
+  "brzdy motocykla prestanú úplne fungovať a motocykel je nutné zastaviť len brzdením motorom.",
+  "zostáva funkčná len zadná brzda; predná brzda sa automaticky vyradí z činnosti."
+ ],
+ "10-85": [
+  "aj motorový olej pre štvortaktné motory do kľukovej skrine motora.",
+  "aj chladiacu kvapalinu priamo do paliva alebo do samostatnej nádrže."
+ ],
+ "10-86": [
+  "premazáva sekundárnu reťaz hnacieho kolesa.",
+  "premazáva ložiská predného a zadného kolesa."
+ ],
+ "10-87": [
+  "nízky tlak v pneumatikách alebo opotrebovanie dezénu pneumatík.",
+  "prehriatie motora alebo nízku hladinu motorového oleja."
+ ],
+ "10-88": [
+  "každých 6 mesiacov.",
+  "každých 5 rokov."
+ ],
+ "10-89": [
+  "akúkoľvek brzdovú kvapalinu bez ohľadu na jej druh.",
+  "destilovanú vodu."
+ ],
+ "10-90": [
+  "prehriatí motora.",
+  "vybitom akumulátore."
+ ],
+ "10-91": [
+  "koncentrovanú kyselinu sírovú.",
+  "pitnú vodu z vodovodu."
+ ],
+ "10-92": [
+  "kladný kontakt (plus) až potom záporný kontakt (kostru).",
+  "súčasne kladný aj záporný kontakt."
+ ]
+}
